@@ -4,6 +4,7 @@ body {
 
 .wrapper {
   overflow: auto;
+  height: auto;
 }
 
 .header {
