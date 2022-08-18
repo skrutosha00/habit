@@ -1,0 +1,108 @@
+body {
+  background: #fefefe;
+}
+
+.wrapper {
+  overflow: auto;
+}
+
+.header {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 60px auto auto;
+}
+
+.header span {
+  margin-bottom: 4px;
+}
+
+.header_left,
+.header_right {
+  width: 90px;
+}
+
+.header_left {
+  color: #c8c8c6;
+  font-weight: 400;
+}
+
+.progress {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 4px;
+  margin: 8px auto 20px;
+}
+
+.day {
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.habit {
+  position: relative;
+
+  width: 302px;
+  height: 153px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 20px auto;
+
+  background: #f6f6f4;
+  border-radius: 19px;
+}
+
+.habit_pic {
+  max-height: 80px;
+  max-width: 100px;
+}
+
+.habit_title {
+  max-width: 188px;
+}
+
+.cross {
+  position: absolute;
+  left: 27px;
+  bottom: 14px;
+
+  width: 14px;
+  height: 14px;
+
+  transition: opacity 0.5s ease;
+}
+
+.tick {
+  position: absolute;
+  right: 23px;
+  bottom: 14px;
+
+  width: 17.5px;
+  height: 13.5px;
+}
+
+.cross_big,
+.tick_big {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+
+  width: 70px;
+
+  transition: opacity ease 0.5s;
+}

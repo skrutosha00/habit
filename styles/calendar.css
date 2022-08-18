@@ -1,0 +1,111 @@
+body {
+  background: #fefefe;
+}
+
+.wrapper {
+  overflow: auto;
+}
+
+.header {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 60px auto auto;
+}
+
+.header span {
+  margin-bottom: 4px;
+}
+
+.header_left,
+.header_right {
+  width: 90px;
+}
+
+.header_center {
+  color: #c8c8c6;
+  font-weight: 400;
+}
+
+.progress {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 4px;
+  margin: 8px auto 20px;
+}
+
+.day {
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+#calendar {
+  width: 343px;
+  height: 372px;
+
+  margin: 20px auto;
+
+  line-height: 1.2rem;
+  font-size: 15px;
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 40px #eeeeee;
+  border-radius: 10px;
+
+  transform-origin: top;
+}
+
+#calendar thead tr:nth-child(1) {
+  height: 50px;
+}
+
+#calendar thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+
+#calendar thead tr td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+
+td {
+  width: 45px;
+  height: 45px;
+}
+
+.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: #27f154;
+}
+
+@media screen and (max-width: 320px) {
+  #calendar {
+    width: auto;
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  #calendar {
+      transform: scale(1.5);
+  }
+}

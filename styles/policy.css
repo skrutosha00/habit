@@ -1,0 +1,35 @@
+.header {
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+.text {
+  width: 65%;
+  height: 65%;
+  margin: 20px auto auto;
+  padding: 20px;
+
+  color: black;
+  font-weight: 400;
+  text-align: left;
+
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 28px;
+}
+
+.link_black {
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 133px);
+}
+
+.text::-webkit-scrollbar {
+  width: 0;
+}
+.text::-webkit-scrollbar-track {
+  width: 0;
+}
+.text::-webkit-scrollbar-thumb {
+  width: 0;
+}

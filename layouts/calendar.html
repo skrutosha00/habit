@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/calendar.css" />
+    <title>Conscious Way</title>
+  </head>
+  <body>
+    <div class="wrapper hidden">
+      <div class="header">
+        <span class="header_left">Calendar</span>
+        <a href="./daily.html" class="header_center">Habit</a>
+        <span class="header_right"></span>
+      </div>
+
+      <div class="progress">
+        <span class="progress_left">21 day chalange</span>
+        <span class="progress_right"></span>
+      </div>
+
+      <div class="day"></div>
+
+      <table id="calendar">
+        <thead>
+          <tr><td>‹<td colspan="5"><td>›
+          <tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su
+        <tbody>
+      </table>
+    </div>
+
+    <script src="../scripts/calendar.js" type="module"></script>
+  </body>
+</html>

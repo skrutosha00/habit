@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-V.ttf");
+}
+
+body {
+  height: 100vh;
+  background: #fbd12a;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+.link_black {
+  width: 266px;
+  height: 51px;
+
+  transform-origin: bottom;
+
+  font-size: 1.5rem;
+  background: #000000;
+  border-radius: 26px;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0.5;
+  max-width: 40%;
+}
+
+.bg_1,
+.bg_2,
+.bg_3 {
+  left: 0;
+  transform: translateX(-100%);
+  transition: left ease 0.5s;
+}
+
+.bg_1 {
+  top: 10%;
+}
+
+.bg_1.active {
+  left: 30%;
+}
+
+.bg_2 {
+  top: 40%;
+}
+
+.bg_2.active {
+  left: 25%;
+}
+
+.bg_3 {
+  top: 70%;
+}
+
+.bg_3.active {
+  left: 35%;
+}
+
+.bg_4,
+.bg_5 {
+  right: 0;
+  transform: translateX(100%);
+  transition: right ease 0.5s;
+}
+
+.bg_4 {
+  top: 20%;
+}
+
+.bg_4.active {
+  right: 30%;
+}
+
+.bg_5 {
+  top: 60%;
+}
+
+.bg_5.active {
+  right: 35%;
+}

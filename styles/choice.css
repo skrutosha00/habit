@@ -1,0 +1,53 @@
+.header {
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 2rem;
+}
+
+.choice {
+  width: 360px;
+  height: 550px;
+  max-height: 55%;
+
+  margin: 20px auto;
+  overflow-y: scroll;
+}
+
+.habit {
+  width: 280px;
+  height: 32px;
+
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+  background: #f6f6f4;
+  border-radius: 19px;
+}
+
+.tick_cont {
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+
+.tick {
+  width: 28px;
+}
+
+.link_black {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 320px) {
+  .choice {
+    width: 320px;
+  }
+}
